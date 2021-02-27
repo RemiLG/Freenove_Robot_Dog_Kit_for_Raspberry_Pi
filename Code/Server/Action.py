@@ -369,12 +369,13 @@ if __name__=='__main__':
     action=Action()  
     time.sleep(2) 
     while True:
-        #action.push_ups()
+        action.push_ups()
         action.helloOne()
-        #action.hand()
+        action.hand()
         #action.coquettish() 
-        #action.swim() 
-        #action.yoga() 
-        #action.helloTwo()
+        action.swim() 
+        action.yoga() 
+        action.helloTwo()
+        action.control.relax(1)
         time.sleep(3)
         

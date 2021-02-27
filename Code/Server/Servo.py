@@ -23,10 +23,13 @@ class Servo:
 if __name__ == '__main__':
     print ('Program is starting ... ')
     S=Servo()
+    target_angle = 90
     while True:
         try:
             for i in range(16):
-                S.setServoAngle(i,90)
+                S.setServoAngle(i,target_angle)
+            #target_angle = (target_angle + 10) % 180
+            #time.sleep(1)
         except KeyboardInterrupt:
             print ("\nEnd of program")
             break
